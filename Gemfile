@@ -119,10 +119,10 @@ end
 
 group :development, :test do
   gem 'rails-dev-tweaks'
-  gem 'spinach-rails'
+  gem 'spinach-rails', '>= 0.1.8'
   gem "rspec-rails"
-  gem "capybara"
-  gem "capybara-webkit"
+  gem "capybara", ">= 1.1.2"
+  gem "capybara-webkit", ">= 0.12.1"
   gem "headless"
   gem "pry"
   gem "awesome_print"
