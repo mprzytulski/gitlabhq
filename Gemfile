@@ -19,7 +19,7 @@ gem "pg", :group => :postgres
 gem "devise", "~> 2.1.0"
 gem 'omniauth'
 gem 'omniauth-google-oauth2'
-gem 'omniauth-twitter'
+gem 'omniauth-twitter', '>= 0.0.13'
 gem 'omniauth-github'
 
 # GITLAB patched libs
