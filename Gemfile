@@ -51,7 +51,7 @@ gem "kaminari"
 gem "haml-rails"
 
 # Files attachments
-gem "carrierwave"
+gem "carrierwave", ">= 1.3.2"
 
 # Authorization
 gem "six"
