@@ -32,10 +32,10 @@ gem 'grack',         :git => "https://github.com/gitlabhq/grack.git"
 gem "gitolite", '1.1.0'
 
 # Syntax highlighter
-gem "pygments.rb", "0.3.1"
+gem "pygments.rb", "1.0.0"
 
 # Language detection
-gem "github-linguist", "~> 2.3.4" , :require => "linguist"
+gem "github-linguist", "~> 2.3.4", :require => "linguist"
 
 # API
 gem "grape", "~> 0.2.1"
