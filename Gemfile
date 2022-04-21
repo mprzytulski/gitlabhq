@@ -94,7 +94,7 @@ gem 'settingslogic'
 
 # Misc
 gem "foreman"
-gem "git"
+gem "git", ">= 1.11.0"
 
 group :assets do
   gem "sass-rails",   "3.2.5"
