@@ -16,7 +16,7 @@ gem "mysql2", :group => :mysql
 gem "pg", :group => :postgres
 
 # Auth
-gem "devise", "~> 2.1.0"
+gem "devise", "~> 2.1.2"
 gem 'omniauth'
 gem 'omniauth-google-oauth2'
 gem 'omniauth-twitter'
