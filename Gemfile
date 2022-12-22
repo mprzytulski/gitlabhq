@@ -8,7 +8,7 @@ def linux_only(require_as)
   RUBY_PLATFORM.include?('linux') && require_as
 end
 
-gem "rails", "3.2.8"
+gem "rails", "4.0.0"
 
 # Supported DBs
 gem "sqlite3", :group => :sqlite
@@ -16,7 +16,7 @@ gem "mysql2", :group => :mysql
 gem "pg", :group => :postgres
 
 # Auth
-gem "devise", "~> 2.1.0"
+gem "devise", "~> 3.0.0"
 gem 'omniauth'
 gem 'omniauth-google-oauth2'
 gem 'omniauth-twitter'
@@ -48,7 +48,7 @@ gem "stamp"
 gem "kaminari"
 
 # HAML
-gem "haml-rails"
+gem "haml-rails", ">= 0.3.5"
 
 # Files attachments
 gem "carrierwave"
@@ -71,10 +71,10 @@ gem "thin"
 gem "unicorn"
 
 # Issue tags
-gem "acts-as-taggable-on", "2.3.1"
+gem "acts-as-taggable-on", "2.4.1"
 
 # Decorators
-gem "draper"
+gem "draper", ">= 1.0.0"
 
 # Background jobs
 gem "resque", "~> 1.20.0"
@@ -97,12 +97,12 @@ gem "foreman"
 gem "git"
 
 group :assets do
-  gem "sass-rails",   "3.2.5"
-  gem "coffee-rails", "3.2.2"
+  gem "sass-rails", "4.0.0"
+  gem "coffee-rails", "4.0.0"
   gem "uglifier",     "1.0.3"
   gem "therubyracer"
 
-  gem 'chosen-rails'
+  gem 'chosen-rails', '>= 0.9.11.1'
   gem 'jquery-atwho-rails', '0.1.6'
   gem "jquery-rails",     "2.0.2"
   gem "jquery-ui-rails",  "0.5.0"
@@ -118,7 +118,7 @@ group :development do
 end
 
 group :development, :test do
-  gem 'rails-dev-tweaks'
+  gem 'rails-dev-tweaks', '>= 1.1.0'
   gem 'spinach-rails'
   gem "rspec-rails"
   gem "capybara"
