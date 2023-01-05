@@ -81,7 +81,7 @@ gem "resque", "~> 1.20.0"
 gem 'resque_mailer'
 
 # HTTP requests
-gem "httparty"
+gem "httparty", ">= 0.21.0"
 
 # Handle encodings
 gem "charlock_holmes"
