@@ -8,7 +8,7 @@ def linux_only(require_as)
   RUBY_PLATFORM.include?('linux') && require_as
 end
 
-gem "rails", "3.2.8"
+gem "rails", "6.1.7.3"
 
 # Supported DBs
 gem "sqlite3", :group => :sqlite
@@ -16,11 +16,11 @@ gem "mysql2", :group => :mysql
 gem "pg", :group => :postgres
 
 # Auth
-gem "devise", "~> 2.1.0"
-gem 'omniauth'
-gem 'omniauth-google-oauth2'
+gem "devise", "~> 4.7.1"
+gem 'omniauth', '>= 2.0.0'
+gem 'omniauth-google-oauth2', '>= 0.2.5'
 gem 'omniauth-twitter'
-gem 'omniauth-github'
+gem 'omniauth-github', '>= 2.0.0'
 
 # GITLAB patched libs
 gem "grit",          :git => "https://github.com/gitlabhq/grit.git",            :ref => "7f35cb98ff17d534a07e3ce6ec3d580f67402837"
@@ -32,26 +32,26 @@ gem 'grack',         :git => "https://github.com/gitlabhq/grack.git"
 gem "gitolite", '1.1.0'
 
 # Syntax highlighter
-gem "pygments.rb", "0.3.1"
+gem "pygments.rb", "1.0.0"
 
 # Language detection
-gem "github-linguist", "~> 2.3.4" , :require => "linguist"
+gem "github-linguist", "~> 2.3.4", :require => "linguist"
 
 # API
-gem "grape", "~> 0.2.1"
+gem "grape", "~> 1.1.0"
 
 # Format dates and times
 # based on human-friendly examples
 gem "stamp"
 
 # Pagination
-gem "kaminari"
+gem "kaminari", ">= 1.2.1"
 
 # HAML
-gem "haml-rails"
+gem "haml-rails", ">= 1.0.0"
 
 # Files attachments
-gem "carrierwave"
+gem "carrierwave", ">= 1.3.2"
 
 # Authorization
 gem "six"
@@ -60,10 +60,10 @@ gem "six"
 gem "ffaker"
 
 # Seed data
-gem "seed-fu"
+gem "seed-fu", ">= 2.3.6"
 
 # Markdown to HTML
-gem "redcarpet",     "~> 2.1.1"
+gem "redcarpet", "~> 3.5.1"
 gem "github-markup", "~> 0.7.4", require: 'github/markup'
 
 # Servers
@@ -71,17 +71,17 @@ gem "thin"
 gem "unicorn"
 
 # Issue tags
-gem "acts-as-taggable-on", "2.3.1"
+gem "acts-as-taggable-on", "3.1.0"
 
 # Decorators
-gem "draper"
+gem "draper", ">= 1.0.0"
 
 # Background jobs
 gem "resque", "~> 1.20.0"
 gem 'resque_mailer'
 
 # HTTP requests
-gem "httparty"
+gem "httparty", ">= 0.21.0"
 
 # Handle encodings
 gem "charlock_holmes"
@@ -94,31 +94,31 @@ gem 'settingslogic'
 
 # Misc
 gem "foreman"
-gem "git"
+gem "git", ">= 1.13.0"
 
 group :assets do
-  gem "sass-rails",   "3.2.5"
-  gem "coffee-rails", "3.2.2"
-  gem "uglifier",     "1.0.3"
+  gem "sass-rails", "5.0.8"
+  gem "coffee-rails", "4.2.2"
+  gem "uglifier", "2.7.2"
   gem "therubyracer"
 
-  gem 'chosen-rails'
+  gem 'chosen-rails', '>= 0.9.11.1'
   gem 'jquery-atwho-rails', '0.1.6'
-  gem "jquery-rails",     "2.0.2"
-  gem "jquery-ui-rails",  "0.5.0"
+  gem "jquery-rails", "4.4.0"
+  gem "jquery-ui-rails", "6.0.0"
   gem "modernizr",        "2.5.3"
   gem "raphael-rails",    "1.5.2"
-  gem 'bootstrap-sass',   "2.0.4"
+  gem 'bootstrap-sass', '3.4.0'
 end
 
 group :development do
   gem "letter_opener"
   gem "annotate", :git => "https://github.com/ctran/annotate_models.git"
-  gem 'rack-mini-profiler'
+  gem 'rack-mini-profiler', '>= 0.10.1'
 end
 
 group :development, :test do
-  gem 'rails-dev-tweaks'
+  gem 'rails-dev-tweaks', '>= 1.1.0'
   gem 'spinach-rails'
   gem "rspec-rails"
   gem "capybara"
