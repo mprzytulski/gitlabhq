@@ -77,7 +77,7 @@ gem "acts-as-taggable-on", "2.3.1"
 gem "draper"
 
 # Background jobs
-gem "resque", "~> 1.20.0"
+gem "resque", "~> 1.21.0"
 gem 'resque_mailer'
 
 # HTTP requests
@@ -144,7 +144,7 @@ group :test do
   gem "simplecov", :require => false
   gem "shoulda-matchers"
   gem 'email_spec'
-  gem 'resque_spec'
+  gem 'resque_spec', '>= 0.12.0'
   gem "webmock"
   gem 'test_after_commit'
 end
