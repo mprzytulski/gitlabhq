@@ -8,7 +8,7 @@ def linux_only(require_as)
   RUBY_PLATFORM.include?('linux') && require_as
 end
 
-gem "rails", "3.2.8"
+gem "rails", "6.1.7.9"
 
 # Supported DBs
 gem "sqlite3", :group => :sqlite
@@ -45,7 +45,7 @@ gem "grape", "~> 0.2.1"
 gem "stamp"
 
 # Pagination
-gem "kaminari"
+gem "kaminari", ">= 1.0.0"
 
 # HAML
 gem "haml-rails"
@@ -71,7 +71,7 @@ gem "thin"
 gem "unicorn"
 
 # Issue tags
-gem "acts-as-taggable-on", "2.3.1"
+gem "acts-as-taggable-on", "3.1.0"
 
 # Decorators
 gem "draper"
@@ -97,7 +97,7 @@ gem "foreman"
 gem "git"
 
 group :assets do
-  gem "sass-rails",   "3.2.5"
+  gem "sass-rails", "6.0.0"
   gem "coffee-rails", "3.2.2"
   gem "uglifier",     "1.0.3"
   gem "therubyracer"
@@ -105,7 +105,7 @@ group :assets do
   gem 'chosen-rails'
   gem 'jquery-atwho-rails', '0.1.6'
   gem "jquery-rails",     "2.0.2"
-  gem "jquery-ui-rails",  "0.5.0"
+  gem "jquery-ui-rails", "4.0.5"
   gem "modernizr",        "2.5.3"
   gem "raphael-rails",    "1.5.2"
   gem 'bootstrap-sass',   "2.0.4"
