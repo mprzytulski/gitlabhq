@@ -78,7 +78,7 @@ gem "draper"
 
 # Background jobs
 gem "resque", "~> 1.20.0"
-gem 'resque_mailer'
+gem 'resque_mailer', '>= 2.1.0'
 
 # HTTP requests
 gem "httparty"
