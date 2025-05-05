@@ -120,7 +120,7 @@ end
 group :development, :test do
   gem 'rails-dev-tweaks'
   gem 'spinach-rails'
-  gem "rspec-rails"
+  gem "rspec-rails", ">= 8.0.0"
   gem "capybara"
   gem "capybara-webkit"
   gem "headless"
