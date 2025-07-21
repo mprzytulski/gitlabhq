@@ -8,7 +8,7 @@ def linux_only(require_as)
   RUBY_PLATFORM.include?('linux') && require_as
 end
 
-gem "rails", "3.2.8"
+gem "rails", "3.2.9"
 
 # Supported DBs
 gem "sqlite3", :group => :sqlite
@@ -16,7 +16,7 @@ gem "mysql2", :group => :mysql
 gem "pg", :group => :postgres
 
 # Auth
-gem "devise", "~> 2.1.0"
+gem "devise", "~> 2.1.3"
 gem 'omniauth'
 gem 'omniauth-google-oauth2'
 gem 'omniauth-twitter'
@@ -48,7 +48,7 @@ gem "stamp"
 gem "kaminari"
 
 # HAML
-gem "haml-rails"
+gem "haml-rails", ">= 0.3.5"
 
 # Files attachments
 gem "carrierwave"
@@ -71,7 +71,7 @@ gem "thin"
 gem "unicorn"
 
 # Issue tags
-gem "acts-as-taggable-on", "2.3.1"
+gem "acts-as-taggable-on", "2.3.2"
 
 # Decorators
 gem "draper"
@@ -93,19 +93,19 @@ gem "colored"
 gem 'settingslogic'
 
 # Misc
-gem "foreman"
+gem "foreman", ">= 0.48.0"
 gem "git"
 
 group :assets do
-  gem "sass-rails",   "3.2.5"
-  gem "coffee-rails", "3.2.2"
+  gem "sass-rails", "3.2.6"
+  gem "coffee-rails", "4.0.0"
   gem "uglifier",     "1.0.3"
   gem "therubyracer"
 
-  gem 'chosen-rails'
+  gem 'chosen-rails', '>= 0.9.9'
   gem 'jquery-atwho-rails', '0.1.6'
-  gem "jquery-rails",     "2.0.2"
-  gem "jquery-ui-rails",  "0.5.0"
+  gem "jquery-rails", "2.1.4"
+  gem "jquery-ui-rails", "1.0.0"
   gem "modernizr",        "2.5.3"
   gem "raphael-rails",    "1.5.2"
   gem 'bootstrap-sass',   "2.0.4"
@@ -118,9 +118,9 @@ group :development do
 end
 
 group :development, :test do
-  gem 'rails-dev-tweaks'
-  gem 'spinach-rails'
-  gem "rspec-rails"
+  gem 'rails-dev-tweaks', '>= 1.1.0'
+  gem 'spinach-rails', '>= 0.2.0'
+  gem "rspec-rails", ">= 2.11.0"
   gem "capybara"
   gem "capybara-webkit"
   gem "headless"
@@ -128,11 +128,11 @@ group :development, :test do
   gem "awesome_print"
   gem "database_cleaner"
   gem "launchy"
-  gem 'factory_girl_rails'
+  gem 'factory_girl_rails', '>= 4.1.0'
 
   # Guard
-  gem 'guard-rspec'
-  gem 'guard-spinach'
+  gem 'guard-rspec', '>= 1.2.2'
+  gem 'guard-spinach', '>= 0.0.3'
 
   # Notification
   gem 'rb-fsevent', :require => darwin_only('rb-fsevent')
