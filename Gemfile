@@ -18,9 +18,9 @@ gem "pg", :group => :postgres
 # Auth
 gem "devise", "~> 2.1.0"
 gem 'omniauth'
-gem 'omniauth-google-oauth2'
+gem 'omniauth-google-oauth2', '>= 0.1.15'
 gem 'omniauth-twitter'
-gem 'omniauth-github'
+gem 'omniauth-github', '>= 1.1.0'
 
 # GITLAB patched libs
 gem "grit",          :git => "https://github.com/gitlabhq/grit.git",            :ref => "7f35cb98ff17d534a07e3ce6ec3d580f67402837"
